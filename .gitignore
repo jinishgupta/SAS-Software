@@ -1,0 +1,5 @@
+Diagrams/*
+node_modules
+.gcloudignore
+*.db
+*.db-*

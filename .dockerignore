@@ -1,0 +1,9 @@
+**/node_modules
+**/*.db
+**/*.db-*
+**/*.log
+Diagrams
+.git
+README.md
+Dockerfile
+docker-compose.yml

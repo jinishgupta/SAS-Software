@@ -1,0 +1,12 @@
+services:
+  sas:
+    build: .
+    image: sas:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - sas-data:/data   # keeps sas.db across restarts and rebuilds
+    restart: unless-stopped
+
+volumes:
+  sas-data:

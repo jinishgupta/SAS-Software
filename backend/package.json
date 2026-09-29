@@ -1,0 +1,19 @@
+{
+  "name": "sas",
+  "version": "1.0.0",
+  "description": "Supermarket Automation Software",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "test": "node --no-warnings --test \"tests/**/*.test.js\"",
+    "test:unit": "node --no-warnings --test \"tests/unit/*.test.js\"",
+    "test:blackbox": "node --no-warnings --test \"tests/blackbox/*.test.js\"",
+    "test:integration": "node --no-warnings --test \"tests/integration/*.test.js\"",
+    "test:coverage": "node --no-warnings --test --experimental-test-coverage --test-coverage-include=\"services/**\" --test-coverage-include=\"routes/**\" --test-coverage-include=\"server.js\" --test-coverage-include=\"db.js\" \"tests/**/*.test.js\"",
+    "test:whitebox": "node --no-warnings --test \"tests/whitebox/*.test.js\" \"tests/unit/*.test.js\"",
+    "test:system": "node --no-warnings --test \"tests/system/*.test.js\""
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
